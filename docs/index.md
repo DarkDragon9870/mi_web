@@ -2,9 +2,12 @@
 
 # Sprint 1
 
-[Pulsar aquí para ir al sprint 1](sprint1/index.md)
+[Pulsa aquí para ir al sprint 1](sprint1/index.md)
 
 # Sprint 2
 
-[Pulsar aquí para ir al sprint2](sprint2/index.md)
+[Pulsa aquí para ir al sprint2](sprint2/index.md)
 
+# Sprint 3
+
+[Pulsa aquí para ir al sprint3](sprint3/index.md)
