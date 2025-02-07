@@ -73,4 +73,114 @@ Descargamos el archivo y lo extraemos.
 
 ![17](sources/imagenes/install_and_conf/17.png)
 
+Abrimos la terminal y ejecutamos un update.
 
+![18](sources/imagenes/install_and_conf/18.png)
+
+Ahora instalamos ldap ejecutando el siguiente comando:
+
+```
+apt install slapd ldap-utils
+```
+
+![19](sources/imagenes/install_and_conf/19.png)
+
+Ponemos la contraseña del administrador.
+
+![20](sources/imagenes/install_and_conf/20.png)
+
+Volvemos a poner la contraseña.
+
+![21](sources/imagenes/install_and_conf/21.png)
+
+Ejecutamos este comando para ver si se instalo bien
+
+```
+slapcat
+```
+
+![22](sources/imagenes/install_and_conf/22.png)
+
+Ahora ejecutamos el siguiente comando.
+
+```
+dpkg-reconfigure slapd
+```
+
+![23](sources/imagenes/install_and_conf/23.png)
+
+Pulsamos no
+
+![24](sources/imagenes/install_and_conf/24.png)
+
+Pulsamos enter y saldra este menu.
+
+![25](sources/imagenes/install_and_conf/25.png)
+
+ponemos el nombre de la organizacion.
+
+![26](sources/imagenes/install_and_conf/26.png)
+
+En el siguiente menu pondremos la contrsae de administrador.
+
+![27](sources/imagenes/install_and_conf/27.png)
+
+Pulsamos enter y en el siguiente menu volvemos a poner la misma contraseña
+
+![28](sources/imagenes/install_and_conf/28.png)
+
+Aparecera el siguiente menu cuando pulsamos enter.
+
+![29](sources/imagenes/install_and_conf/29.png)
+
+Selecionamos en si y pulsamos enter.
+
+![30](sources/imagenes/install_and_conf/30.png)
+
+Pulsamos enter.
+
+![31](sources/imagenes/install_and_conf/31.png)
+
+Ahora ejecutamos ```slapcat``` para comprobar que esta bien configurado.
+
+![32](sources/imagenes/install_and_conf/32.png)
+
+Vamos a los archivos descargados y lo editamos.
+
+![33](sources/imagenes/install_and_conf/33.png)
+
+cambiamos los dc por el nuestro en los archivos siguientes:
+
+uo.ldif:
+
+![34](sources/imagenes/install_and_conf/34.png)
+
+grup.ldif:
+
+![35](sources/imagenes/install_and_conf/35.png)
+
+usu.ldif:
+
+![36](sources/imagenes/install_and_conf/36.png)
+
+Guaradamos y ejecutamos el siguiente comando para añadir los archivos:
+
+```
+ldapadd -c -x -D "cn=admin,dc=lo_que_has_puesto,dc=nombre_de_dominio" -W -f nombre_archivo.ldif
+```
+
+ou.ldif:
+
+![37](sources/imagenes/install_and_conf/37.png)
+
+grup.ldif:
+
+![38](sources/imagenes/install_and_conf/38.png)
+
+usu.ldif:
+
+![39](sources/imagenes/install_and_conf/39.png)
+
+Para comprobar que todo funciono bien volvemos a ejecutar slapcat.
+
+![40](sources/imagenes/install_and_conf/39.png)

@@ -9,14 +9,14 @@
       
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../commands/">
       
       
         <link rel="next" href="../join_domain/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.50">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
     
     
       
@@ -24,7 +24,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.a40c8224.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6f8fc17f.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
@@ -675,6 +675,27 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../commands/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Commands
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -889,6 +910,62 @@ Pulsamos en el icono de red.</p>
 <p><img alt="16" src="../sources/imagenes/install_and_conf/16.png" /></p>
 <p>Descargamos el archivo y lo extraemos.</p>
 <p><img alt="17" src="../sources/imagenes/install_and_conf/17.png" /></p>
+<p>Abrimos la terminal y ejecutamos un update.</p>
+<p><img alt="18" src="../sources/imagenes/install_and_conf/18.png" /></p>
+<p>Ahora instalamos ldap ejecutando el siguiente comando:</p>
+<pre><code>apt install slapd ldap-utils
+</code></pre>
+<p><img alt="19" src="../sources/imagenes/install_and_conf/19.png" /></p>
+<p>Ponemos la contraseña del administrador.</p>
+<p><img alt="20" src="../sources/imagenes/install_and_conf/20.png" /></p>
+<p>Volvemos a poner la contraseña.</p>
+<p><img alt="21" src="../sources/imagenes/install_and_conf/21.png" /></p>
+<p>Ejecutamos este comando para ver si se instalo bien</p>
+<pre><code>slapcat
+</code></pre>
+<p><img alt="22" src="../sources/imagenes/install_and_conf/22.png" /></p>
+<p>Ahora ejecutamos el siguiente comando.</p>
+<pre><code>dpkg-reconfigure slapd
+</code></pre>
+<p><img alt="23" src="../sources/imagenes/install_and_conf/23.png" /></p>
+<p>Pulsamos no</p>
+<p><img alt="24" src="../sources/imagenes/install_and_conf/24.png" /></p>
+<p>Pulsamos enter y saldra este menu.</p>
+<p><img alt="25" src="../sources/imagenes/install_and_conf/25.png" /></p>
+<p>ponemos el nombre de la organizacion.</p>
+<p><img alt="26" src="../sources/imagenes/install_and_conf/26.png" /></p>
+<p>En el siguiente menu pondremos la contrsae de administrador.</p>
+<p><img alt="27" src="../sources/imagenes/install_and_conf/27.png" /></p>
+<p>Pulsamos enter y en el siguiente menu volvemos a poner la misma contraseña</p>
+<p><img alt="28" src="../sources/imagenes/install_and_conf/28.png" /></p>
+<p>Aparecera el siguiente menu cuando pulsamos enter.</p>
+<p><img alt="29" src="../sources/imagenes/install_and_conf/29.png" /></p>
+<p>Selecionamos en si y pulsamos enter.</p>
+<p><img alt="30" src="../sources/imagenes/install_and_conf/30.png" /></p>
+<p>Pulsamos enter.</p>
+<p><img alt="31" src="../sources/imagenes/install_and_conf/31.png" /></p>
+<p>Ahora ejecutamos <code>slapcat</code> para comprobar que esta bien configurado.</p>
+<p><img alt="32" src="../sources/imagenes/install_and_conf/32.png" /></p>
+<p>Vamos a los archivos descargados y lo editamos.</p>
+<p><img alt="33" src="../sources/imagenes/install_and_conf/33.png" /></p>
+<p>cambiamos los dc por el nuestro en los archivos siguientes:</p>
+<p>uo.ldif:</p>
+<p><img alt="34" src="../sources/imagenes/install_and_conf/34.png" /></p>
+<p>grup.ldif:</p>
+<p><img alt="35" src="../sources/imagenes/install_and_conf/35.png" /></p>
+<p>usu.ldif:</p>
+<p><img alt="36" src="../sources/imagenes/install_and_conf/36.png" /></p>
+<p>Guaradamos y ejecutamos el siguiente comando para añadir los archivos:</p>
+<pre><code>ldapadd -c -x -D &quot;cn=admin,dc=lo_que_has_puesto,dc=nombre_de_dominio&quot; -W -f nombre_archivo.ldif
+</code></pre>
+<p>ou.ldif:</p>
+<p><img alt="37" src="../sources/imagenes/install_and_conf/37.png" /></p>
+<p>grup.ldif:</p>
+<p><img alt="38" src="../sources/imagenes/install_and_conf/38.png" /></p>
+<p>usu.ldif:</p>
+<p><img alt="39" src="../sources/imagenes/install_and_conf/39.png" /></p>
+<p>Para comprobar que todo funciono bien volvemos a ejecutar slapcat.</p>
+<p><img alt="40" src="../sources/imagenes/install_and_conf/39.png" /></p>
 
 
 
@@ -939,10 +1016,10 @@ Pulsamos en el icono de red.</p>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.60a45f97.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
       
     
   </body>

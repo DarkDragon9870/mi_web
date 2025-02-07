@@ -16,7 +16,7 @@
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.50">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
     
     
       
@@ -24,7 +24,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.a40c8224.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6f8fc17f.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
@@ -678,6 +678,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../commands/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Commands
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../install_and_conf/" class="md-nav__link">
         
   
@@ -793,6 +814,49 @@
 
 
 <h1 id="unir-al-dominio">Unir al dominio</h1>
+<p>Ejecutamos un sudo apt update.</p>
+<p><img alt="01" src="../sources/imagenes/join_domain/01.png" /></p>
+<p>Ahora ejecutamos el comando</p>
+<pre><code>apt install libnss-ldap libpam-ldap nscd
+</code></pre>
+<p><img alt="02" src="../sources/imagenes/join_domain/02.png" /></p>
+<p>Pulsamos enter y saldra este menu.</p>
+<p><img alt="02" src="../sources/imagenes/join_domain/02.png" /></p>
+<p>Tendremos que poner ldap//tu_ip.</p>
+<p><img alt="03" src="../sources/imagenes/join_domain/03.png" /></p>
+<p>Pulsamos enter.</p>
+<p><img alt="04" src="../sources/imagenes/join_domain/04.png" /></p>
+<p>cambiamos el example y el net por lo que hemos puesto.</p>
+<p><img alt="05" src="../sources/imagenes/join_domain/05.png" /></p>
+<p>Pulsamos enter.</p>
+<p><img alt="06" src="../sources/imagenes/join_domain/06.png" /></p>
+<p>Volvemos a pusar enter.</p>
+<p><img alt="07" src="../sources/imagenes/join_domain/07.png" /></p>
+<p>volvemos a puslar enter otra vez</p>
+<p><img alt="08" src="../sources/imagenes/join_domain/08.png" /></p>
+<p>Otra vez enter.</p>
+<p><img alt="09" src="../sources/imagenes/join_domain/09.png" /></p>
+<p>Marcamos si y luego pulsamos enter.</p>
+<p><img alt="10" src="../sources/imagenes/join_domain/10.png" /></p>
+<p>Saldra este menu donde cambiaremos el manager por admin y el dc por lo que hemos puesto.</p>
+<p><img alt="11" src="../sources/imagenes/join_domain/11.png" /></p>
+<p>En el siguiente menu tendremos que poner la contraseña que hemos puesto en ldap.</p>
+<p><img alt="12" src="../sources/imagenes/join_domain/12.png" /></p>
+<p>En el siguiente menu cambiamos toca cambiar el proxyuser por otro usuarios como solo tengo un usuario usare el admin pero en un caso real se tiene que usar otro.</p>
+<p><img alt="13" src="../sources/imagenes/join_domain/13.png" /></p>
+<p>Pulsamos en enter y en el siguiente menu ponemos la contraseña.</p>
+<p><img alt="14" src="../sources/imagenes/join_domain/14.png" /></p>
+<p>Una vez configurado iremos al archivo nsswitch.conf y lo editaremos paraque ubuntu consulte los usuarios de ldap.</p>
+<p><img alt="15" src="../sources/imagenes/join_domain/15.png" /></p>
+<p>Guardamos el archivo y ahora editaremos el archivo common-session.</p>
+<p><img alt="16" src="../sources/imagenes/join_domain/16.png" /></p>
+<p>Por ultimo editaremos el archivo 50-ubuntu.conf para poder iniciar sesion on el usuario de ldap.</p>
+<p><img alt="17" src="../sources/imagenes/join_domain/17.png" /></p>
+<p>Si queremos comprobar que el usuario existe hacemos un getent passwd</p>
+<p><img alt="18" src="../sources/imagenes/join_domain/18.png" /></p>
+<p>Reiniciamos la maquina para aplicar los cambios y ahora podremos iniciar sesion con el usuario tanto desde terminal como interfaz grafica.</p>
+<p>Terminal</p>
+<p><img alt="19" src="../sources/imagenes/join_domain/19.png" /></p>
 
 
 
@@ -843,10 +907,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.60a45f97.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
       
     
   </body>
