@@ -85,6 +85,26 @@ Terminal
 
 ![19](sources/imagenes/join_domain/19.png)
 
+Interfaz grafica:
+
+Estando en el menu de incio de sesion usaremos la opcion no esta en la lista.
+
+![20](sources/imagenes/join_domain/20.png)
+
+Escribimos el usuario y pulsamos enter.
+
+![21](sources/imagenes/join_domain/21.png)
+
+Escribimos contraseña.
+
+![22](sources/imagenes/join_domain/22.png)
+
+Si todo a salido bien habras accedido al alu1.
+
+![23](sources/imagenes/join_domain/23.png)
+
+
+
 
 
 
