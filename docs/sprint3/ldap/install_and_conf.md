@@ -69,7 +69,7 @@ Guardamos el archivo y reiniciamos la maquina.
 
 ![16](sources/imagenes/install_and_conf/16.png)
 
-Descargamos el archivo y lo extraemos.
+Descargamos el archivo del moodle y lo extraemos.
 
 ![17](sources/imagenes/install_and_conf/17.png)
 
@@ -100,6 +100,8 @@ slapcat
 ```
 
 ![22](sources/imagenes/install_and_conf/22.png)
+
+## Configuracion
 
 Ahora ejecutamos el siguiente comando.
 
