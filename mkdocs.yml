@@ -2,6 +2,7 @@ site_name: Alex Dragan
 custom_dir: docs/sources
 theme:
   name: 'material'
+  logo: 'sources/icon/icon.png'
   fixed_nav: true
   features:
     - content.code.copy
