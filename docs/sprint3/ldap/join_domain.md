@@ -15,11 +15,9 @@ Pulsamos enter y saldra este menu. Tendremos que poner ldap//tu_ip.
 
 ![03](sources/imagenes/join_domain/03.png)
 
-Pulsamos enter.
-
 ![04](sources/imagenes/join_domain/04.png)
 
-cambiamos el example y el net por lo que hemos puesto.
+Pulsamoes enter. Cambiamos el example y el net por lo que hemos puesto.
 
 ![05](sources/imagenes/join_domain/05.png)
 
