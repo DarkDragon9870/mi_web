@@ -8,6 +8,10 @@
 
 [Pulsa aquí para ir al index](samba_installation.md)
 
+# Instalacion de interfaz grafica.
+
+[Pulsa aquí para ir al index](webmin.md)
+
 # Instalacion de samba en el cliente y pruebas
 
 [Pulsa aquí para ir al index](samba_installation_client.md)

@@ -11,11 +11,7 @@ apt install libnss-ldap libpam-ldap nscd
 ```
 ![02](sources/imagenes/join_domain/02.png)
 
-Pulsamos enter y saldra este menu.
-
-![02](sources/imagenes/join_domain/02.png)
-
-Tendremos que poner ldap//tu_ip.
+Pulsamos enter y saldra este menu. Tendremos que poner ldap//tu_ip.
 
 ![03](sources/imagenes/join_domain/03.png)
 
