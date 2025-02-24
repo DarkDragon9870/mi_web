@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../nfs/">
+        <link rel="prev" href="../">
       
       
-        <link rel="next" href="../samba_installation_client/">
+        <link rel="next" href="../samba_installation/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Instalar y configurar samba server - Alex Dragan</title>
+        <title>Compartir archivos con NFS - Alex Dragan</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#instalar-y-configurar-samba-server" class="md-skip">
+        <a href="#compartir-archivos-con-nfs" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Instalar y configurar samba server
+              Compartir archivos con NFS
             
           </span>
         </div>
@@ -615,27 +615,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../nfs/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Compartir archivos con NFS
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -648,18 +627,29 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
   
   <span class="md-ellipsis">
-    Instalar y configurar samba server
+    Compartir archivos con NFS
   </span>
   
 
-          <span class="md-nav__icon md-icon"></span>
-        </label>
+      </a>
       
-      <a href="./" class="md-nav__link md-nav__link--active">
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../samba_installation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -668,44 +658,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#instalar" class="md-nav__link">
-    <span class="md-ellipsis">
-      Instalar
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configuracion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configuracion
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -907,32 +859,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#instalar" class="md-nav__link">
-    <span class="md-ellipsis">
-      Instalar
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configuracion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configuracion
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -946,36 +872,7 @@
                   
 
 
-<h1 id="instalar-y-configurar-samba-server">Instalar y configurar samba server</h1>
-<h2 id="instalar">Instalar</h2>
-<p>Primero ejecutar un sudo apt update.</p>
-<p><img alt="01" src="../sources/imagenes/samba_server/1.png" /></p>
-<p>Una vez hecho el update instalamos el samba</p>
-<p><img alt="02" src="../sources/imagenes/samba_server/2.png" /></p>
-<p><img alt="03" src="../sources/imagenes/samba_server/3.png" /></p>
-<p>Una vez instalado vamos a la carpeta raiz, creamos una carpeta y ejecutamos estos comandos</p>
-<pre><code>sudo mkdir hola
-
-sudo chown nobody:nogroup carpeta que has creado
-
-sudo chmod -R 777 carpeta creada
-
-sudo chmod -R 777 carpeta creada
-
-ls -l | grep carpeta creada
-</code></pre>
-<p><img alt="04" src="../sources/imagenes/samba_server/4.png" /></p>
-<h2 id="configuracion">Configuracion</h2>
-<p>Ahora iremos a editar el archivo smb.conf y agregaremos las siguientes lineas.</p>
-<p><img alt="05" src="../sources/imagenes/samba_server/5.png" /></p>
-<p>Guardamos los cambios y reiniciamos el samba.</p>
-<p><img alt="06" src="../sources/imagenes/samba_server/6.png" /></p>
-<p>Ahora creamos los usuarios y grupo.</p>
-<p><img alt="07" src="../sources/imagenes/samba_server/7.png" /></p>
-<p>Ahora ejecutamos el comando.</p>
-<p><img alt="08" src="../sources/imagenes/samba_server/8.png" /></p>
-<p>Creare un archivo de prueba.</p>
-<p><img alt="09" src="../sources/imagenes/samba_server/9.png" /></p>
+<h1 id="compartir-archivos-con-nfs">Compartir archivos con NFS</h1>
 
 
 
