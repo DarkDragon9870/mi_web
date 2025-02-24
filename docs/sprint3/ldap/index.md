@@ -6,4 +6,10 @@
 # Unir un cliente al dominio
 [Pulsa aquí para ir a la documentación](join_domain.md)
 
+# Compartir archivos con NFS
+[Pulsa aquí para ir a la documentación](nfs.md)
+
+# Instalacion de interfaz grafica.
+
+[Pulsa aquí para ir al index](graphical_interface.md)
 
