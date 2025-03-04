@@ -6,8 +6,8 @@
 
 # Instalacion de samba en el server.
 
-[Pulsa aquí para ir al index](samba_installation.md)
+[Pulsar aquí para ir a la documentación](samba_installation.md)
 
 # Instalacion de samba en el cliente y pruebas
 
-[Pulsa aquí para ir al index](samba_installation_client.md)
+[Pulsar aquí para ir a la documentación](samba_installation_client.md)
