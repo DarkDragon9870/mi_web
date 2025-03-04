@@ -2,4 +2,4 @@
 
 # Proyecto 1
 
-[Pulsa aqui para ir al index](proyecto1/index.md)
+[Pulsa aquí para ir al index](proyecto1/index.md)
