@@ -21,8 +21,6 @@ sudo chown nobody:nogroup carpeta que has creado
 
 sudo chmod -R 777 carpeta creada
 
-sudo chmod -R 777 carpeta creada
-
 ls -l | grep carpeta creada
 ```
 ![04](sources/imagenes/samba_server/4.png)
